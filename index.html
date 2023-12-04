@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+
+    <!-- preload low res images 
+    <link rel="preload" as="image" href="images/image-lowres" fetchpriority="high"> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // verify code executed
+        console.log('//Ready method within head tag running');
+      });
+    </script>
+  </head>
+  <body class="bg-white">
+    <header><h1 class="pri-clr">&lt;h1&gt;Header</h1></header>
+
+    <main>
+      <div class="modal">
+        <div class="modalOverlay"></div>
+        <div class="modalContent pri-clr">
+          <h1 class="pri-clr-modal">Rush Fan Site Refactor</h1>
+          <p>
+            <span class="text-bold">Description:</span> A fan site of the
+            Canadian rock trio Rush. This project started out as an exploration
+            of a color scheme I find interesting. After the fact I realized this
+            is the same color scheme used on their debut album.
+          </p>
+        </div>
+      </div>
+      <article>
+        <h2 class="pri-clr">&lt;h2&gt;Article</h2>
+        <p class="pri-clr">&lt;p&gt;Lorem ipsum</p>
+        <a id="open" class="a-btn" href="#">Modal</a>
+      </article>
+    </main>
+
+    <footer></footer>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

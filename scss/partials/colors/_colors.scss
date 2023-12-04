@@ -1,0 +1,107 @@
+:root {
+  //primary color set
+  --pri-clr: #333;
+  --pri-clr-modal: #727272;
+  --pri-clr-modal-lt: #979797;
+}
+
+//the following code does not work
+// --pri-clr-hs: 210, 100%;
+// --pri-clr-l: 56%;
+// --pri-clr: hsl(var(--pri-clr-hs), var(var(--pri-clr-l)));
+
+// --pri-clr-900 {
+//   color: hsl(var(--pri-clr-hs), calc(--pri-clr-l * 1.5));
+// }
+
+.pri-clr {
+  color: var(--pri-clr);
+}
+
+.pri-clr-modal {
+  color: var(--pri-clr-modal);
+}
+
+.pri-clr-modal-lt {
+  color: var(--pri-clr-modal-lt);
+}
+
+.pri-clr-9 {
+  color: var(--pri-clr-9);
+}
+
+.bg-pri-9 {
+  background-color: var(--pri-clr-9);
+}
+
+.pri-clr-8 {
+  color: var(--pri-clr-8);
+}
+
+.bg-pri-8 {
+  background-color: var(--pri-clr-8);
+}
+
+.pri-clr-7 {
+  color: var(--pri-clr-7);
+}
+
+.bg-pri-7 {
+  background-color: var(--pri-clr-7);
+}
+
+.pri-clr-6 {
+  color: var(--pri-clr-6);
+}
+
+.bg-pri-6 {
+  background-color: var(--pri-clr-6);
+}
+
+.pri-clr-5 {
+  color: var(--pri-clr-5);
+}
+
+.bg-pri-5 {
+  background-color: var(--pri-clr-5);
+}
+
+.pri-clr-4 {
+  color: var(--pri-clr-4);
+}
+
+.bg-pri-4 {
+  background-color: var(--pri-clr-4);
+}
+
+.pri-clr-3 {
+  color: var(--pri-clr-3);
+}
+
+.bg-pri-3 {
+  background-color: var(--pri-clr-3);
+}
+
+.pri-clr-2 {
+  color: var(--pri-clr-2);
+}
+
+.bg-pri-2 {
+  background-color: var(--pri-clr-2);
+}
+
+.pri-clr-1 {
+  color: var(--pri-clr-1);
+}
+
+.bg-pri-1 {
+  background-color: var(--pri-clr-1);
+}
+
+.clr-white {
+  color: white;
+}
+
+.bg-white {
+  color: white;
+}
