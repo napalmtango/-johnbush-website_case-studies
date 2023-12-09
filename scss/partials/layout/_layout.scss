@@ -13,11 +13,11 @@
 }
 
 .modal-grid {
-  margin-top: 1em;
+  margin-top: 1rem;
   border-top: 1px solid var(--pri-clr-modal-lt);
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1em;
+  grid-template-columns: 70% 30%;
+  gap: 2rem;
 }
 
 .modal-btn-flex {
@@ -39,4 +39,24 @@ article {
 article:nth-of-type(1) {
   margin-top: 1.5rem;
   // padding-top: 1.5em;
+}
+
+.sidebar {
+  margin-right: 2rem;
+}
+
+.sidebar div > a {
+  text-decoration: none;
+}
+
+.sidebar > div {
+  background-color: white;
+  border-radius: 8px;
+  padding: 0 0 0.2rem 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar > div:nth-of-type(1) {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
