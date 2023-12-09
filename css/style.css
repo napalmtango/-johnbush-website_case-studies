@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   font-size: 100%;
 }
@@ -25,14 +24,68 @@ img {
   font-weight: 500;
 }
 
+h1,
+h2 {
+  font-weight: 500;
+}
+
+.flex-cont {
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Barlow Condensed", monospace;
+  font-weight: 700;
+  src: url("../assets/fonts/BarlowCondensed-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Barlow Condensed", monospace;
+  font-weight: 600;
+  src: url("../assets/fonts/BarlowCondensed-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Barlow Condensed" monospace;
+  font-weight: 300;
+  src: url("../assets/fonts/assistant/BarlowCondensed-Light.woff2") format("woff2");
+}
 html {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Barlow Condensed", monospace;
 }
 
 :root {
-  --pri-clr: #333;
+  --pri-clr: hsl(0, 0%, 40%);
+  --pri-clr-lt: hsl(0, 0%, 45%);
+  --btn-pri-hover: hsl(0, 0%, 30%);
   --pri-clr-modal: #727272;
   --pri-clr-modal-lt: #979797;
+  --modal-btn-bg: white;
+  --modal-btn-hover: hsla(0, 0%, 95%, 1);
+  --modal-btn-clr: #ccc;
+  --modal-btn-clr-dk: #999;
+}
+
+body {
+  color: var(--pri-clr);
+}
+
+footer {
+  color: var(--pri-clr);
+}
+
+a {
+  color: var(--pri-clr);
+}
+
+.a-btn {
+  background-color: var(--pri-clr-lt);
+}
+
+.clr-white {
+  color: white;
+}
+
+.bg-white {
+  color: white;
 }
 
 .pri-clr {
@@ -55,103 +108,51 @@ html {
   background-color: var(--pri-clr-9);
 }
 
-.pri-clr-8 {
-  color: var(--pri-clr-8);
-}
-
-.bg-pri-8 {
-  background-color: var(--pri-clr-8);
-}
-
-.pri-clr-7 {
-  color: var(--pri-clr-7);
-}
-
-.bg-pri-7 {
-  background-color: var(--pri-clr-7);
-}
-
-.pri-clr-6 {
-  color: var(--pri-clr-6);
-}
-
-.bg-pri-6 {
-  background-color: var(--pri-clr-6);
-}
-
-.pri-clr-5 {
-  color: var(--pri-clr-5);
-}
-
-.bg-pri-5 {
-  background-color: var(--pri-clr-5);
-}
-
-.pri-clr-4 {
-  color: var(--pri-clr-4);
-}
-
-.bg-pri-4 {
-  background-color: var(--pri-clr-4);
-}
-
-.pri-clr-3 {
-  color: var(--pri-clr-3);
-}
-
-.bg-pri-3 {
-  background-color: var(--pri-clr-3);
-}
-
-.pri-clr-2 {
-  color: var(--pri-clr-2);
-}
-
-.bg-pri-2 {
-  background-color: var(--pri-clr-2);
-}
-
-.pri-clr-1 {
-  color: var(--pri-clr-1);
-}
-
-.bg-pri-1 {
-  background-color: var(--pri-clr-1);
-}
-
-.clr-white {
-  color: white;
-}
-
-.bg-white {
-  color: white;
-}
-
 .a-btn {
   text-decoration: none;
-  padding: 0.5em 0.7em;
-  background-color: var(--pri-clr);
-  color: var(--clr-white);
+  padding: 0.25em 0.7em;
+  background-color: var(--pri-clr-lt);
+  color: white;
   border-radius: 0.45rem;
   display: inline-block;
   margin-top: 0.35rem;
+  cursor: pointer;
 }
 
 .a-btn:hover {
-  background-color: var(--pri-clr-4);
+  background-color: hsl(0, 0%, 56%);
 }
 
-.modalContent {
+.a-modal-btn {
+  margin-top: 0;
+  background-color: var(--modal-btn-bg);
+  color: var(--modal-btn-clr);
+  border: 1px solid var(--modal-btn-clr-dk);
+  padding: 0;
+}
+
+.a-modal-btn:hover {
+  background-color: var(--modal-btn-hover);
+  color: var(--pri-clr-modal-lt);
+}
+
+.modal {
+  visibility: hidden;
+}
+
+.modalWindow {
   background-color: white;
-  height: 75vh;
-  width: 50vw;
+  top: 50vh;
+  left: 50vw;
+  translate: -50% -50%;
+  height: 900px;
+  width: 750px;
   position: absolute;
-  left: 25vw;
   color: var(--pri-clr);
-  padding: 1.5em;
   border: 1px solid var(--pri-clr-modal-lt);
   border-radius: 10px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
 }
 
 .modalOverlay {
@@ -162,6 +163,48 @@ html {
   top: 0;
 }
 
-.modalContent > h1 {
-  font-weight: 500;
+.active {
+  visibility: visible;
+}
+
+.container {
+  width: 50vw;
+  margin-left: 25%;
+}
+
+.close-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-content {
+  margin: 0.5rem 0 0 2.5rem;
+}
+
+.modal-grid {
+  margin-top: 1em;
+  border-top: 1px solid var(--pri-clr-modal-lt);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1em;
+}
+
+.modal-btn-flex {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-cont {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+article {
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+article:nth-of-type(1) {
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

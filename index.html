@@ -4,42 +4,113 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
+    <title>Modal WIP</title>
 
     <!-- preload low res images 
     <link rel="preload" as="image" href="images/image-lowres" fetchpriority="high"> -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
-        // verify code executed
-        console.log('//Ready method within head tag running');
+        // log to verify jQuery ready method code executed
+        console.log(
+          '//jQuery loaded, ready method running. Executed from within head tag'
+        );
       });
     </script>
   </head>
+
   <body class="bg-white">
+    //----------------------- //Header
     <header><h1 class="pri-clr">&lt;h1&gt;Header</h1></header>
 
+    //----------------------- //Main
     <main>
+      //--------------------- //Modal and Modal Overlay
       <div class="modal">
         <div class="modalOverlay"></div>
-        <div class="modalContent pri-clr">
-          <h1 class="pri-clr-modal">Rush Fan Site Refactor</h1>
-          <p>
-            <span class="text-bold">Description:</span> A fan site of the
-            Canadian rock trio Rush. This project started out as an exploration
-            of a color scheme I find interesting. After the fact I realized this
-            is the same color scheme used on their debut album.
-          </p>
+
+        <div class="modalWindow pri-clr">
+          <div class="modal-btn-flex">
+            <a id="close" class="a-btn a-modal-btn" href="#">
+              <img
+                src="assets/images/close_FILL0_wght400_cfcfcf.png"
+                alt=""
+                height="24px"
+                width="24px"
+              />
+            </a>
+          </div>
+
+          <div class="modal-content">
+            <h1 class="pri-clr-modal text-bold">Rush Fan Site Refactor</h1>
+            <div class="flex-cont">
+              <div>Html</div>
+              <div>Sass</div>
+              <div>Partials</div>
+              <div>Custom CSS Properties</div>
+              <div>Animation</div>
+              <div>JavaScript</div>
+            </div>
+
+            <div class="modal-grid">
+              <div class="col">
+                <article>
+                  <span class="text-bold">Description:</span> A fan site of the
+                  Canadian rock trio Rush. This project started out as an
+                  exploration of a color scheme I find interesting. After the
+                  fact I realized this is the same color scheme used on their
+                  <a href="#">debut album.</a>
+                </article>
+                <article>
+                  <span class="text-bold">Problem:</span> This was a school
+                  project which I completed in the first two weeks of class. The
+                  CSS I had written was excessively long and complicated. The
+                  code, in general needed considerable clean up—comments written
+                  in a clearer fashion, proper indentation, image alt tags,
+                  explicit image sizes, semantic tags and hosting Google fonts
+                  on my server, to name a few.
+                </article>
+                <article>
+                  <span class="text-bold">Strategy:</span> This was a school
+                  project which I completed in the first two weeks of class. The
+                  CSS I had written was excessively long and complicated. The
+                  code, in general needed some clean-up as far as clearly
+                  written comments, proper indentation and a range of best
+                  practices, scubas alt tags, explicit image sizes,
+                  accessibility to name a few. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Rerum porro dolorem incidunt
+                  itaque tempora cupiditate beatae veniam maiores, commodi
+                  ducimus ullam ipsa alias? Officia in laborum, mollitia
+                  voluptas sint accusamus?
+                </article>
+                <article>
+                  <span class="text-bold">Lorem:</span> Ipsum dolor sit amet
+                  consectetur adipisicing elit. Rerum porro dolorem incidunt
+                  itaque tempora cupiditate beatae veniam maiores.
+                </article>
+              </div>
+              <!-- End Col -->
+
+              <div class="col"></div>
+            </div>
+            <!-- End Modal Grid -->
+          </div>
+          <!-- End Modal Content -->
         </div>
+        <!--  End Modal Window -->
       </div>
-      <article>
+      <!--  End Modal  -->
+
+      //----------------------- //Base page content
+      <article class="article">
         <h2 class="pri-clr">&lt;h2&gt;Article</h2>
         <p class="pri-clr">&lt;p&gt;Lorem ipsum</p>
         <a id="open" class="a-btn" href="#">Modal</a>
       </article>
     </main>
 
-    <footer></footer>
+    //----------------------- //Footer
+    <footer>Footer content</footer>
 
     <script src="./scripts/script.js"></script>
   </body>

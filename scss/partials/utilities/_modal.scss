@@ -1,14 +1,21 @@
-.modalContent {
+//NOTE: .modal-close-btn located in _buttons.scss
+.modal {
+  visibility: hidden;
+}
+
+.modalWindow {
   background-color: white;
-  height: 75vh;
-  width: 50vw;
+  top: 50vh;
+  left: 50vw;
+  translate: -50% -50%;
+  height: 900px;
+  width: 750px;
   position: absolute;
-  left: 25vw;
   color: var(--pri-clr);
-  padding: 1.5em;
   border: 1px solid var(--pri-clr-modal-lt);
   border-radius: 10px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
 }
 
 .modalOverlay {
@@ -19,6 +26,6 @@
   top: 0;
 }
 
-.modalContent > h1 {
-  font-weight: 500;
+.active {
+  visibility: visible;
 }

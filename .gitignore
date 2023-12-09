@@ -7,3 +7,5 @@ scss/partials/utilities/.DS_Store
 css/.DS_Store
 scss/.DS_Store
 scss/partials/.DS_Store
+*.pdf
+*.odt

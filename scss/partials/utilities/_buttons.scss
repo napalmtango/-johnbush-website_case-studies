@@ -1,13 +1,27 @@
 .a-btn {
   text-decoration: none;
-  padding: 0.5em 0.7em;
-  background-color: var(--pri-clr);
-  color: var(--clr-white);
+  padding: 0.25em 0.7em;
+  background-color: var(--pri-clr-lt);
+  color: white;
   border-radius: 0.45rem;
   display: inline-block;
   margin-top: 0.35rem;
+  cursor: pointer;
 }
 
 .a-btn:hover {
-  background-color: var(--pri-clr-4);
+  background-color: hsl(0, 0%, 56%);
+}
+
+.a-modal-btn {
+  margin-top: 0;
+  background-color: var(--modal-btn-bg);
+  color: var(--modal-btn-clr);
+  border: 1px solid var(--modal-btn-clr-dk);
+  padding: 0;
+}
+
+.a-modal-btn:hover {
+  background-color: var(--modal-btn-hover);
+  color: var(--pri-clr-modal-lt);
 }
