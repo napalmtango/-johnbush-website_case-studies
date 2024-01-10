@@ -31,6 +31,13 @@
   margin-top: 0.25rem;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+}
+
 article {
   margin-top: 1.5rem;
   line-height: 1.5;
@@ -41,12 +48,19 @@ article:nth-of-type(1) {
   // padding-top: 1.5em;
 }
 
-.sidebar {
-  margin-right: 2rem;
+.aflex {
+  display: flex;
 }
 
-.sidebar div > a {
-  text-decoration: none;
+#img-container {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 186px;
+  margin-top: 0.4rem;
+}
+
+.sidebar {
+  margin-right: 2rem;
 }
 
 .sidebar > div {
@@ -56,7 +70,7 @@ article:nth-of-type(1) {
   margin-bottom: 0.25rem;
 }
 
-.sidebar > div:nth-of-type(1) {
+.sidebar-bg {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }

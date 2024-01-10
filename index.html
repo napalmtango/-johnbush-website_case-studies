@@ -20,106 +20,123 @@
   </head>
 
   <body class="bg-white">
-    //----------------------- //Header
+    <!-- Header -->
     <header><h1 class="pri-clr">&lt;h1&gt;Header</h1></header>
 
-    //----------------------- //Main
+    <!-- Main -->
     <main>
-      //--------------------- //Modal and Modal Overlay
-      <div class="modal">
-        <div class="modalOverlay"></div>
-
-        <div class="modalWindow pri-clr">
-          <div class="modal-btn-flex">
-            <a id="close" class="a-btn a-modal-btn" href="#">
-              <img
-                src="assets/images/close_FILL0_wght400_cfcfcf.png"
-                alt=""
-                height="24px"
-                width="24px"
-              />
-            </a>
-          </div>
-
-          <div class="modal-content">
-            <h1 class="pri-clr-modal text-bold">Rush Fan Site Refactor</h1>
-            <div class="flex-cont">
-              <div>Html</div>
-              <div>Sass</div>
-              <div>Partials</div>
-              <div>Custom CSS Properties</div>
-              <div>Animation</div>
-              <div>JavaScript</div>
-            </div>
-
-            <div class="modal-grid">
-              <div class="col">
-                <article>
-                  <span class="text-bold">Description:</span> A fan site of the
-                  Canadian rock trio Rush. This project started out as an
-                  exploration of a color scheme I find interesting. After the
-                  fact I realized this is the same color scheme used on their
-                  <a href="#">debut album.</a>
-                </article>
-                <article>
-                  <span class="text-bold">Problem:</span> This was a school
-                  project which I completed in the first two weeks of class. The
-                  CSS I had written was excessively long and complicated. The
-                  code, in general needed considerable clean up—comments written
-                  in a clearer fashion, proper indentation, image alt tags,
-                  explicit image sizes, semantic tags and hosting Google fonts
-                  on my server, to name a few.
-                </article>
-                <article>
-                  <span class="text-bold">Strategy:</span> This was a school
-                  project which I completed in the first two weeks of class. The
-                  CSS I had written was excessively long and complicated. The
-                  code, in general needed some clean-up as far as clearly
-                  written comments, proper indentation and a range of best
-                  practices, scubas alt tags, explicit image sizes,
-                  accessibility to name a few. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Rerum porro dolorem incidunt
-                  itaque tempora cupiditate beatae veniam maiores, commodi
-                  ducimus ullam ipsa alias? Officia in laborum, mollitia
-                  voluptas sint accusamus?
-                </article>
-                <article>
-                  <span class="text-bold">Lorem:</span> Ipsum dolor sit amet
-                  consectetur adipisicing elit. Rerum porro dolorem incidunt
-                  itaque tempora cupiditate beatae veniam maiores.
-                </article>
-              </div>
-              <!-- End Col -->
-
-              <div class="col">
-                <article class="sidebar">
-                  <div><a href="">Rush Fan Site Refactor</a></div>
-                  <div><a href="">Football Season Sim</a></div>
-                  <div><a href="">Silly Personal Page</a></div>
-                  <div><a href="">Sums and Nums</a></div>
-                  <div><a href="">Color Frankenstein Mixer</a></div>
-                </article>
-              </div>
-            </div>
-            <!-- End Modal Grid -->
-          </div>
-          <!-- End Modal Content -->
-        </div>
-        <!--  End Modal Window -->
-      </div>
-      <!--  End Modal  -->
-
-      //----------------------- //Base page content
+      <!-- Base page content -->
       <article class="article">
         <h2 class="pri-clr">&lt;h2&gt;Article</h2>
         <p class="pri-clr">&lt;p&gt;Lorem ipsum</p>
-        <a id="open" class="a-btn" href="#">Modal</a>
+        <a id="rush-open" class="a-btn rush" href="#">Rush</a>
+        <a id="football-open" class="a-btn football" href="#">Football</a>
+        <a id="silly-open" class="a-btn silly" href="#">Silly</a>
+        <a id="sums-open" class="a-btn sums" href="#">Sums</a>
+        <a id="color-open" class="a-btn color" href="#">Color</a>
       </article>
     </main>
 
-    //----------------------- //Footer
+    <!-- Modal -->
+    <div class="modal">
+      <!-- Modal Overlay -->
+      <div class="modalOverlay"></div>
+
+      <!-- Modal Window -->
+      <div class="modalWindow pri-clr">
+        <div class="modal-btn-flex">
+          <a id="close" class="a-btn a-modal-btn" href="#">
+            <img
+              src="assets/images/close_FILL0_wght400_cfcfcf.png"
+              alt=""
+              height="24px"
+              width="24px"
+            />
+          </a>
+        </div>
+
+        <!-- Modal Content -->
+        <div class="modal-content">
+          <h1 class="pri-clr-modal text-bold" id="page-header">
+            Rush Fan Site Refactor
+          </h1>
+          <div id="tools" class="flex-cont">
+            <div>Html</div>
+            <div>Sass</div>
+            <div>Partials</div>
+            <div>Custom CSS Properties</div>
+            <div>Animation</div>
+            <div>JavaScript</div>
+          </div>
+
+          <!-- Modal Grid -->
+          <div class="modal-grid">
+            <div class="col">
+              <div class="flex-col">
+                <div>
+                  <article>
+                    <span id="subhead1" class="text-bold">Description:</span>
+                    <span id="copy1"></span>
+                  </article>
+                  <article>
+                    <span id="subhead2" class="text-bold">Problem:</span
+                    ><span id="copy2"></span>
+                  </article>
+                  <article>
+                    <span id="subhead3" class="text-bold">Strategy:</span
+                    ><span id="copy3"></span>
+                  </article>
+                  <article>
+                    <span id="subhead4" class="text-bold">Lorem:</span
+                    ><span id="copy4"></span>
+                  </article>
+                </div>
+                <div>
+                  <span class="page-links"></span>
+                  <div id="img-container"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col">
+              <article class="sidebar">
+                <div class="rush-bg">
+                  <a href="#" class="rush">Rush Fan Site Refactor</a>
+                </div>
+                <div class="football-bg">
+                  <a href="#" class="football">Football Season Sim</a>
+                </div>
+                <div class="silly-bg">
+                  <a href="#" class="silly">Silly Personal Page</a>
+                </div>
+                <div class="sums-bg">
+                  <a href="#" class="sums">Sums and Nums</a>
+                </div>
+                <div class="color-bg">
+                  <a href="#" class="color">Frankenstein Color Mixer</a>
+                </div>
+              </article>
+            </div>
+            <!-- End Sidebar -->
+          </div>
+          <!-- End Modal Grid -->
+        </div>
+        <!-- End Modal Content -->
+      </div>
+      <!-- End Modal Window -->
+    </div>
+    <!-- End Modal 
+
+    <!-- Footer -->
     <footer>Footer content</footer>
 
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/rush.js"></script>
+    <script src="./scripts/football.js"></script>
+    <script src="./scripts/silly.js"></script>
+    <script src="./scripts/sums.js"></script>
+    <script src="./scripts/color.js"></script>
   </body>
 </html>

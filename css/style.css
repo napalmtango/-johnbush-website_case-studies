@@ -29,6 +29,14 @@ h2 {
   font-weight: 500;
 }
 
+a {
+  text-decoration: none;
+}
+
+.p-a {
+  text-decoration: underline;
+}
+
 .flex-cont {
   font-weight: 300;
 }
@@ -110,7 +118,7 @@ a {
 
 .a-btn {
   text-decoration: none;
-  padding: 0.25em 0.7em;
+  padding: 0.07em 0.7em;
   background-color: var(--pri-clr-lt);
   color: white;
   border-radius: 0.45rem;
@@ -137,7 +145,7 @@ a {
 }
 
 .modal {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .modalWindow {
@@ -153,6 +161,7 @@ a {
   border-radius: 10px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
+  z-index: 2;
 }
 
 .modalOverlay {
@@ -161,6 +170,7 @@ a {
   width: 100vw;
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 
 .active {
@@ -200,6 +210,13 @@ a {
   margin-top: 0.25rem;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+}
+
 article {
   margin-top: 1.5rem;
   line-height: 1.5;
@@ -209,12 +226,19 @@ article:nth-of-type(1) {
   margin-top: 1.5rem;
 }
 
-.sidebar {
-  margin-right: 2rem;
+.aflex {
+  display: flex;
 }
 
-.sidebar div > a {
-  text-decoration: none;
+#img-container {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 186px;
+  margin-top: 0.4rem;
+}
+
+.sidebar {
+  margin-right: 2rem;
 }
 
 .sidebar > div {
@@ -224,7 +248,7 @@ article:nth-of-type(1) {
   margin-bottom: 0.25rem;
 }
 
-.sidebar > div:nth-of-type(1) {
+.sidebar-bg {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=style.css.map */
