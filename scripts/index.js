@@ -2,31 +2,31 @@ console.log('//External script file being read from scripts/script.js');
 
 let cont = {};
 
-$('.rush').click(function () {
+$('.rush-open-js').click(function () {
   modal();
   rushPop();
   modalContent();
 });
 
-$('.football').click(function () {
+$('.football-open-js').click(function () {
   modal();
   footballPop();
   modalContent();
 });
 
-$('.silly').click(function () {
+$('.silly-open-js').click(function () {
   modal();
   sillyPop();
   modalContent();
 });
 
-$('.sums').click(function () {
+$('.sums-open-js').click(function () {
   modal();
   sumsPop();
   modalContent();
 });
 
-$('.color').click(function () {
+$('.color-open-js').click(function () {
   modal();
   colorPop();
   modalContent();
