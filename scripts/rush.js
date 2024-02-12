@@ -3,27 +3,18 @@ function rushPop() {
     pageHeader: 'Rush Fan Site Refactor',
     tools: `<div>Tools:&nbsp;&nbsp;&nbsp;Sass Partials,&nbsp;&nbsp;&nbsp;Custom CSS Properties,&nbsp;&nbsp;&nbsp;CSS Animation,&nbsp;&nbsp;&nbsp;JavaScript</div>`,
     subhead1: `Description: `,
-    copy1: `A glorious fan site of the Canadian rock trio Rush. This project started out as an exploration of a color scheme I find interesting. After the fact I realized this is the same color scheme used on their <a class="p-a" href="#">debut album.</a>`,
+    copy1: `A fan site of the Canadian rock trio Rush. This school project started out as an exploration of a color scheme I find interesting. After the fact I realized this is the same color scheme used on their <a class="album-pop" onmouseover="rushModal(event)" onmouseout="album.classList.add('hidden')">debut album.</a>`,
     subhead2: `Problem: `,
     copy2: `This was a school project which I completed in the first two
     weeks of class. The CSS I had written was excessively long
     and complicated. The code, in general needed considerable
-    clean up—comments written in a clearer fashion, proper
+    clean up: Comments written in a clearer fashion, proper
     indentation, image alt tags, explicit image sizes, semantic
     tags and hosting Google fonts on my server, to name a
     few.
     `,
     subhead3: `Strategy: `,
-    copy3: `This was a school project which I completed in the first two
-    weeks of class. The CSS I had written was excessively long
-    and complicated. The code, in general needed some clean-up
-    as far as clearly written comments, proper indentation and a
-    range of best practices, scubas alt tags, explicit image
-    sizes, accessibility to name a few. Lorem ipsum dolor sit
-    amet consectetur adipisicing elit. Rerum porro dolorem
-    incidunt itaque tempora cupiditate beatae veniam maiores,
-    commodi ducimus ullam ipsa alias? Officia in laborum,
-    mollitia voluptas sint.
+    copy3: `My first priority was to refactor all css, utilizing sass, into relevant partials organized into subfolders as shown in this <a class="p-a" href="#">diagram</a>. 
     `,
     subhead4: `Result: `,
     copy4: `Ipsum dolor sit amet consectetur adipisicing elit. Quae iste asperiores magni delectus omnis veritatis.
@@ -37,5 +28,21 @@ function rushPop() {
   $(`.football-bg`).removeClass(`sidebar-bg`);
   $(`.silly-bg`).removeClass(`sidebar-bg`);
   $(`.sums-bg`).removeClass(`sidebar-bg`);
-  $(`.color-bg`).removeClass(`sidebar-bg`);
+  $(`.quiz-bg`).removeClass(`sidebar-bg`);
+  $(`.google-bg`).removeClass(`sidebar-bg`);
 }
+
+const album = document.querySelector('.album');
+
+function rushModal(event) {
+  console.log('rushModal');
+  album.classList.remove('hidden');
+  // let x = event.clientX + 20;
+  // let y = event.clientY - 60;
+  album.style.left = `${event.clientX + 20}px`;
+  album.style.top = `${event.clientY - 60}px`;
+}
+
+// function rushModalhide() {
+//   album.classList.add('hidden');
+// }

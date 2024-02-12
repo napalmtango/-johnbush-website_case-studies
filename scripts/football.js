@@ -32,5 +32,6 @@ function footballPop() {
   $(`.football-bg`).addClass(`sidebar-bg`);
   $(`.silly-bg`).removeClass(`sidebar-bg`);
   $(`.sums-bg`).removeClass(`sidebar-bg`);
-  $(`.color-bg`).removeClass(`sidebar-bg`);
+  $(`.quiz-bg`).removeClass(`sidebar-bg`);
+  $(`.google-bg`).removeClass(`sidebar-bg`);
 }

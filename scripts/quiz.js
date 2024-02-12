@@ -1,8 +1,7 @@
-function colorPop() {
+function quizPop() {
   cont = {
-    pageHeader: 'Frankenstein: The Color Mixer',
-    tools: `<div>Tools:&nbsp;&nbsp;&nbsp;Sass Partials,&nbsp;&nbsp;&nbsp;Nested Custom CSS Properties,&nbsp;&nbsp;&nbsp;Bootstrap Deconstruction</div>
-    <div>JavaScript</div>`,
+    pageHeader: 'Nine Funny Words',
+    tools: `<div>Tools:&nbsp;&nbsp;&nbsp;JavaScript,&nbsp;&nbsp;&nbsp;jQuery,&nbsp;&nbsp;&nbsp;Multi-dimensional Arrays</div>`,
     subhead1: `Description: `,
     copy1: `Ipsum dolor sit amet consectetur adipisicing elit. Quae iste asperiores magni delectus omnis veritatis. `,
     subhead2: `Problem: `,
@@ -31,5 +30,6 @@ function colorPop() {
   $(`.football-bg`).removeClass(`sidebar-bg`);
   $(`.silly-bg`).removeClass(`sidebar-bg`);
   $(`.sums-bg`).removeClass(`sidebar-bg`);
-  $(`.color-bg`).addClass(`sidebar-bg`);
+  $(`.quiz-bg`).addClass(`sidebar-bg`);
+  $(`.google-bg`).removeClass(`sidebar-bg`);
 }

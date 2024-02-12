@@ -33,8 +33,9 @@ a {
   text-decoration: none;
 }
 
-.p-a {
+.album-pop {
   text-decoration: underline;
+  cursor: default;
 }
 
 .flex-cont {
@@ -175,6 +176,22 @@ a {
 
 .active {
   visibility: visible;
+}
+
+.album {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  background-color: whitesmoke;
+  color: var(--pri-clr-lt);
+  padding: 4px 0;
+  text-align: center;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .container {

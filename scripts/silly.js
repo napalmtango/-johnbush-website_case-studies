@@ -29,5 +29,6 @@ function sillyPop() {
   $(`.football-bg`).removeClass(`sidebar-bg`);
   $(`.silly-bg`).addClass(`sidebar-bg`);
   $(`.sums-bg`).removeClass(`sidebar-bg`);
-  $(`.color-bg`).removeClass(`sidebar-bg`);
+  $(`.quiz-bg`).removeClass(`sidebar-bg`);
+  $(`.google-bg`).removeClass(`sidebar-bg`);
 }

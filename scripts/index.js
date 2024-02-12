@@ -26,15 +26,25 @@ $('.sums-open-js').click(function () {
   modalContent();
 });
 
-$('.color-open-js').click(function () {
+$('.quiz-open-js').click(function () {
   modal();
-  colorPop();
+  quizPop();
+  modalContent();
+});
+
+$('.google-open-js').click(function () {
+  modal();
+  googlePop();
   modalContent();
 });
 
 $('#close').click(function () {
   console.log('Modal close button clicked');
   $('.modal').removeClass('active');
+});
+
+$('#album-pop').click(function () {
+  console.log('hover');
 });
 
 function modal() {
@@ -61,3 +71,9 @@ function modalContent() {
   $(`.page-links`).html(cont.pageLinks);
   $(`#img-container`).html(cont.imgContainer);
 }
+
+const albumPop = document.querySelector('.album-pop');
+
+albumPop.addEventListener('click', function () {
+  console.log('rush clicked');
+});
